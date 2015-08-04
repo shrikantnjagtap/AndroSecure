@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AdminActivityWithDB" >
+
+    <TextView
+        android:id="@+id/tvFirstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etFirstNumber"
+        android:layout_alignBottom="@+id/etFirstNumber"
+        android:layout_alignLeft="@+id/bUpdatePassword"
+        android:text="First Number" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/bContactDetail"
+        android:ems="10"
+        android:hint="Enter Email Id" />
+
+    <EditText
+        android:id="@+id/etFirstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/etEmail"
+        android:layout_below="@+id/etEmail"
+        android:ems="10"
+        android:hint="Enter First Number" />
+
+    <EditText
+        android:id="@+id/etSecondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etFirstNumber"
+        android:layout_alignRight="@+id/etFirstNumber"
+        android:layout_below="@+id/etFirstNumber"
+        android:ems="10"
+        android:hint="Enter Second Number" />
+
+    <Button
+        android:id="@+id/bContactDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etSecondNumber"
+        android:text="Update Contact" />
+
+    <EditText
+        android:id="@+id/etCurrentPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etSecondNumber"
+        android:layout_alignRight="@+id/bContactDetail"
+        android:layout_below="@+id/bContactDetail"
+        android:ems="10"
+        android:hint="Current Password" />
+
+    <EditText
+        android:id="@+id/etNewPassowrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etCurrentPassword"
+        android:layout_alignRight="@+id/etCurrentPassword"
+        android:layout_below="@+id/etCurrentPassword"
+        android:ems="10"
+        android:hint="New Password" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etNewPassowrd"
+        android:layout_below="@+id/etNewPassowrd"
+        android:text="Change Password" />
+
+    <Button
+        android:id="@+id/bUpdatePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bChangePassword"
+        android:layout_below="@+id/bChangePassword"
+        android:text="Update Password" />
+
+    <Button
+        android:id="@+id/bBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bUpdatePassword"
+        android:layout_alignRight="@+id/etNewPassowrd"
+        android:layout_marginBottom="16dp"
+        android:text="Back"
+        android:onClick="stopadmin"/>
+
+</RelativeLayout>
